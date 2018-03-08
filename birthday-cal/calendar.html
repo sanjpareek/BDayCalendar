@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birthday Cal</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400,300|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/task.css">
+
+  </head>
+  <body>
+    <div class="app">
+
+      <h1 class="app__header">Birthday Cal &ndash; Work Area</h1>
+
+      <div class="app__content">
+
+        <div id="work-area">
+
+          <div class="calendar-container">
+            <div class="note">
+               <div id="mon" class="calendar-day">
+                 <span class="calendar-day-header">
+                   <span class="calendar-day-header-text">MON</span>
+                  <span>
+               </div>
+               <div id="tue" class="calendar-day">
+                 <span class="calendar-day-header">
+                   <span class="calendar-day-header-text">TUE</span>
+                  <span>
+               </div>
+               <div id="wed" class="calendar-day">
+                 <span class="calendar-day-header">
+                    <span class="calendar-day-header-text">WED</span>
+                  <span>
+               </div>
+               <div id="thu" class="calendar-day">
+                 <span class="calendar-day-header">
+                    <span class="calendar-day-header-text">THU</span>
+                    <span>
+               </div>
+               <div id="fri" class="calendar-day">
+                 <span class="calendar-day-header">
+                   <span class="calendar-day-header-text">FRI</span>
+                 <span>
+               </div>
+               <div id="sat" class="calendar-day">
+                 <span class="calendar-day-header">
+                    <span class="calendar-day-header-text">SAT</span>
+                  <span>
+               </div>
+               <div id="sun" class="calendar-day">
+                 <span class="calendar-day-header">
+                    <span class="calendar-day-header-text">SUN</span>
+                  <span>
+               </div>
+            </div>
+          </div>
+
+          <span id="error"></span>
+          <div class="app__inputs">
+            <textarea class="app__txt js-json" id="json-input" placeholder="Paste the json here."></textarea>
+
+            <div class="app__actions">
+              <label>Year</label>
+              <select class="js-year-input" id="year" onchange="CalendarOperations.updateCalendar()">
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016" selected>2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-line app__border" />
+
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.calendar-day-header{
+  height: 25px;
+  background-color: #7b68ee;
+  display: inherit;
+  text-align: right;
+}
+
+.calendar-day-header-text{
+  padding-right: 2px;
+  color: white;
+}
+
+.bday-box{
+  background-color: pink;
+}
+
+.calendar-day {
+    border-top-left-radius: 5px;
+    border: 2px solid #73AD21;
+    margin-right: 5px;
+    width: 126px;
+    height: 150px;
+    float: left;
+    border-top-right-radius: 5px;
+    margin-top: 30px;
+}
